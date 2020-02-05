@@ -1,24 +1,27 @@
+/* Remove the slightly darker background on hover over messages. */
 .theme-dark {
-  --background-message-hover: unset !important;
+  --background-message-hover: unset;
 }
 
-div[class^='buttonContainer'] div[class^='emojiButton'],
-div[class^='buttonContainer'] div[class*=' emojiButton'],
-div[class*=' buttonContainer'] div[class^='emojiButton'],
-div[class*=' buttonContainer'] div[class*=' emojiButton'] {
+/* Remove all emoji bar buttons except for the emoji picker itself. */
+div[class*='buttonContainer-'] div[class*='emojiButton-'],
+div[class*='buttonContainer-'] div[class*='emojiSeparator-'],
+div[class*='buttonContainer-'] div[class*='button-']:last-child {
   display: none;
 }
 
-div[class^='buttonContainer'] div[class^='emojiSeparator'],
-div[class^='buttonContainer'] div[class*=' emojiSeparator'],
-div[class*=' buttonContainer'] div[class^='emojiSeparator'],
-div[class*=' buttonContainer'] div[class*=' emojiSeparator'] {
-  display: none;
+/* Remove emoji picker border. */
+div[class*='buttonContainer-'] div[class*='wrapper-'] {
+  box-shadow: none;
 }
 
-div[class^='buttonContainer'] div[class^='button-']:last-child,
-div[class^='buttonContainer'] div[class*=' button-']:last-child,
-div[class*=' buttonContainer'] div[class^='button-']:last-child,
-div[class*=' buttonContainer'] div[class*=' button-']:last-child {
-  display: none;
+/* Resize and place emoji picker within message height, positioned at the top. */
+div[class*='buttonContainer-'] div[class*='buttons-'] {
+  top: 0;
+}
+div[class*='buttonContainer-'] div[class*='wrapper-'] {
+  height: 26px;
+}
+div[class*='buttonContainer-'] div[class*='button-']:nth-last-child(2) {
+  height: 18px;
 }
