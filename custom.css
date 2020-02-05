@@ -19,6 +19,9 @@ div[class*='buttonContainer-'] div[class*='wrapper-'] {
 div[class*='buttonContainer-'] div[class*='buttons-'] {
   top: 0;
 }
+div[class*='message-'][class*='groupStart-'] div[class*='buttonContainer-'] div[class*='buttons-'] {
+  top: 22px;
+}
 div[class*='buttonContainer-'] div[class*='wrapper-'] {
   height: 26px;
 }
