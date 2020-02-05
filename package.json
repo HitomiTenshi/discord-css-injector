@@ -1,0 +1,17 @@
+{
+  "name": "discord-css",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "injectCss": "node injectCss.js"
+  },
+  "author": "Johann Rekowski",
+  "license": "MIT",
+  "dependencies": {
+    "asar": "^2.0.3",
+    "glob": "^7.1.6",
+    "shelljs": "^0.8.3",
+    "slash": "^3.0.0"
+  }
+}

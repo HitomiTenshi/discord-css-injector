@@ -1,0 +1,24 @@
+.theme-dark {
+  --background-message-hover: unset !important;
+}
+
+div[class^='buttonContainer'] div[class^='emojiButton'],
+div[class^='buttonContainer'] div[class*=' emojiButton'],
+div[class*=' buttonContainer'] div[class^='emojiButton'],
+div[class*=' buttonContainer'] div[class*=' emojiButton'] {
+  display: none;
+}
+
+div[class^='buttonContainer'] div[class^='emojiSeparator'],
+div[class^='buttonContainer'] div[class*=' emojiSeparator'],
+div[class*=' buttonContainer'] div[class^='emojiSeparator'],
+div[class*=' buttonContainer'] div[class*=' emojiSeparator'] {
+  display: none;
+}
+
+div[class^='buttonContainer'] div[class^='button-']:last-child,
+div[class^='buttonContainer'] div[class*=' button-']:last-child,
+div[class*=' buttonContainer'] div[class^='button-']:last-child,
+div[class*=' buttonContainer'] div[class*=' button-']:last-child {
+  display: none;
+}
